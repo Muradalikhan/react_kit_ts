@@ -8,11 +8,11 @@ interface IPrivateRoute {
     navLink: string
 }
 
-const PrivateRoute = ({
+function PrivateRoute({
     component: Component,
     navLink,
     ...rest
-}: IPrivateRoute): ReactNode => {
+}: IPrivateRoute): ReactNode {
     const { data } = useContext(UserContext) as IUserContext
 
     if (data.user) {

@@ -24,16 +24,13 @@ export interface IMessageContext {
     hideSnackbar: () => void
 }
 
-export const MessageContainer = ({
-    children,
-}: IMessageContainer): ReactNode => {
+export function MessageContainer({ children }: IMessageContainer): ReactNode {
     const [snackbarState, setSnackbarState] = useState({
         isSnackbarVisible: false,
         snackBarMessage: '',
         isError: false,
         duration: 3000,
     })
-
     const showSnackbar = (
         message: string,
         isError = false,

@@ -8,7 +8,7 @@ import {
 } from '@mui/material'
 import { IMessageContext, MessageContext } from '../../context/MessageContext'
 
-export const SnackbarMessage = (): ReactNode => {
+function SnackbarMessage(): ReactNode {
     const position: SnackbarOrigin = {
         vertical: 'bottom',
         horizontal: 'right',
@@ -50,3 +50,4 @@ export const SnackbarMessage = (): ReactNode => {
         </Snackbar>
     )
 }
+export default SnackbarMessage

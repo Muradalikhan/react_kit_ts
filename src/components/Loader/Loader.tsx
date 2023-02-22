@@ -1,5 +1,4 @@
 import './Loader.css'
-import { Logo } from '../../Layouts/Dashboard/Logo'
 
 function Loader(): ReactNode {
     return (
@@ -10,12 +9,12 @@ function Loader(): ReactNode {
                     width={400}
                     alt="InnovaTap"
                 /> */}
-                <Logo
+                {/* <Logo
                     sx={{
                         height: 200,
                         width: 200,
                     }}
-                />
+                /> */}
             </div>
         </div>
     )

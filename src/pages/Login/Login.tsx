@@ -14,9 +14,8 @@ import { Helmet } from 'react-helmet-async'
 import { LoadingButton } from '@mui/lab'
 import { useState } from 'react'
 
-const Login = (): ReactNode => {
+function Login(): ReactNode {
     const [email, setEmail] = useState<string>('')
-
     const formik = useFormik({
         initialValues: {
             email: '',
